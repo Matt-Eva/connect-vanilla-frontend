@@ -1,0 +1,63 @@
+body, h1, h2, h3, main, section, p{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: grid;
+    grid-template-rows: 80px calc(100vh - 80px);
+
+}
+
+header {
+    position: fixed;
+    height: 80px;
+    top: 0%;
+    background-color: hsl(0, 0%, 90%);
+    display: grid;
+    grid-template-rows: 50px 30px;
+    grid-template-columns: 100px 50px calc(100vw - 150px);
+    align-content: center;
+}
+
+header h1 {
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 20px;
+    margin: 5px 0px 0px 5px;
+}
+
+#donate-link{
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: start;
+}
+
+#login-link {
+    grid-row: 1;
+    grid-column: 3;
+    justify-self: end;
+}
+
+header nav {
+    grid-row: 2;
+    display: flex;
+}
+
+header nav a {
+    margin: 0px 5px;
+}
+
+main {
+    grid-row: 2;
+    overflow: hidden;
+}
+
+main section {
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+}
+
+
+
